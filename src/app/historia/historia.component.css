@@ -1,0 +1,31 @@
+.menu{   
+    position: relative;
+    display: flex;   
+    background: #ccd4e9;
+    box-shadow: rgb(241, 15, 15) 5px 5px 20px;   
+    height: 30px;
+    align-items: end;
+}
+
+.menu > li{
+    list-style: none;
+    margin-left: 20px;  
+    padding-bottom: 5px; 
+}
+li > ul{
+    list-style: none;
+    padding: 0;
+    display: none;
+    position: absolute;
+}
+
+li > ul > li:hover{    
+    background: rgb(236, 236, 243);
+    list-style: none;
+   
+}
+
+li:hover ul{
+  display: block;
+}
+

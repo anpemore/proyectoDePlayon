@@ -1,0 +1,32 @@
+<div class="ventana">
+      <div class="menu">
+           <li class="menu-item">Cultura
+                <ul>
+                    <li (click)="setHistoria('cultura')">Cultura Uno</li>
+                    <li>Cultura Dos</li>
+                    <li>Cultura Tres</li>
+                </ul>
+           </li>
+           <li class="menu-item" (click)="setHistoria('economia')">Economia</li>
+           <li class="menu-item" (click)="setHistoria('deporte')">Deporte</li>
+           <li class="menu-item" (click)="setHistoria('personajes')">Personajes</li>
+      </div>
+      <div class="main">
+             <div *ngIf="dato=='cultura'">
+                  <h1 style="text-align: center;border-top: 20px;">Estamos en la cultura</h1>
+                   <app-cultura></app-cultura>
+             </div>
+             <div *ngIf="dato=='economia'">
+                  <h1 style="text-align: center;border-top: 20px;">Estamos en la Economia</h1>
+                  <app-economia></app-economia>
+             </div>
+             <div *ngIf="dato=='deporte'">
+                  <h1 style="text-align: center;border-top: 20px;">Sección de Deportes</h1>
+                  <app-deportes></app-deportes>
+             </div>
+             <div *ngIf="dato=='personajes'">
+                 <app-personas></app-personas>
+             </div>
+                 
+      </div>
+</div>
