@@ -3,7 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 import { HistoriaComponent } from './historia/historia.component';
-import { VideoComponent } from './video/video.component';
+import { VideoComponent } from './videos/video.component';
 import { FotoComponent } from './foto/foto.component';
 import { DocumetosComponent } from './documetos/documetos.component';
 import { FormsModule } from '@angular/forms';
@@ -28,6 +28,7 @@ const rutas:Routes=[
     AppComponent,
     HistoriaComponent,
     VideoComponent,
+    
     FotoComponent,
     DocumetosComponent,
     InicioComponent,

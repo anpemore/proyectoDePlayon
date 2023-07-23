@@ -1,31 +1,49 @@
-.menu{   
+.nav{   
     position: relative;
     display: flex;   
-    background: #ccd4e9;
+    background: #114adb;
     box-shadow: rgb(241, 15, 15) 5px 5px 20px;   
-    height: 30px;
-    align-items: end;
+    height: 45px;
+    align-items: center;   
+    background: #c9aeca;
 }
 
-.menu > li{
-    list-style: none;
-    margin-left: 20px;  
-    padding-bottom: 5px; 
+.nav li:hover {
+    background: #b480b4;
+    cursor: pointer;;
 }
-li > ul{
+
+.menu{
     list-style: none;
-    padding: 0;
+    margin-left: 2px;  
+    align-items: center; 
+    height: 45px;
+    background: #ddb2df; 
+    font-size: 24px;  
+    color: #fff; 
+    padding-right: 10px;
+}
+.menu > ul{
+    list-style: none;
+    padding: 0;  
     display: none;
     position: absolute;
+    font-size: 16px;
+    background: #ddb2df; 
+    box-shadow: rgb(184, 74, 74) 5px 5px 10px ;
+    margin-top: 8px;
 }
 
 li > ul > li:hover{    
-    background: rgb(236, 236, 243);
-    list-style: none;
-   
+    background: rgb(12, 12, 29);
+    list-style: none; 
 }
 
-li:hover ul{
-  display: block;
+.menu:hover ul{
+  display: block;    
+}
+.submenu-item{
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
