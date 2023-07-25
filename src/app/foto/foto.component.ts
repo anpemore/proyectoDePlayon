@@ -7,7 +7,7 @@ import { Component, EventEmitter, Output } from '@angular/core';
 })
 export class FotoComponent {
     @Output() valor = new EventEmitter<string>();
-    titulo="Paisajes de San Jose de Playon"
+    titulo="Paisajes En Mahate";
     iniciarVariable(valor:string){
           this.valor.emit(valor);
     }

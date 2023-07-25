@@ -7,7 +7,7 @@ import { Component, EventEmitter, Output } from '@angular/core';
 })
 export class DocumetosComponent {
     @Output() datoAlPadre =new EventEmitter<string>();
-    title="Documentales En San Jose De Playón";
+    title="Documentales En Mahate Norte de Bolivar";
     doc="Fiestas patronales";
     doc1="Carreras de caballo";
     doc2="Cosechar la producción";
