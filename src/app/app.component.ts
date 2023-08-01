@@ -22,8 +22,21 @@ export class AppComponent {
   IniciarVariable(valor:string){
       this.datos=valor; 
       this.icono="";  
-      this.documental="";   
+      this.documental=""; 
+      this.valor="";  
   }
+
+  setHistoria(valor:string){
+     this.valor=valor;  
+     
+    // require('./mysql/conexion.js');
+}
+
+ getVariableVideo(valor:string)
+  {
+     this.valor=valor;  
+  }
+
   setIniciarvariable(valor:string){
        this.valor=valor;  
        this.documental="";

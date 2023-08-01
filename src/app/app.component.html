@@ -37,7 +37,7 @@
                          <app-foto (valor)="setIniciarvariable($event)"></app-foto>
                     </div>
                     <div *ngIf="datos=='videos'">
-                         <app-video></app-video>
+                         <app-video (newItemEvent)="setIniciarvariable($event)"></app-video>
                     </div>
                     
                     <div *ngIf="documental=='documentaluno'">                         
@@ -82,11 +82,10 @@
                     </div>  
                     
                 </div>
-                <div class="aside">                         
-                    <div *ngIf="datos=='documental'">
+                <div class="aside"> 
+                         <div *ngIf="datos=='documental'">
                          <app-documetos (datoAlPadre)="setDocumental($event)"></app-documetos>
                     </div>
-
                         <div *ngIf="valor=='1'">
                               <h1 style="color: red;">Imagen Numero Uno</h1>
                               <img src="./assets/img/ima1.jpg" width="400px" height="400px">

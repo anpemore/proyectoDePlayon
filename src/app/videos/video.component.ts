@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
 
 @Component({
   selector: 'app-video',
@@ -7,6 +7,12 @@ import { Component } from '@angular/core';
 })
 export class VideoComponent {
 
+  @Output() newItemEvent = new EventEmitter<string>();
+    titulo="Videos En Mahate";    
+    addNewItem(value: string) {
+       alert("componente video");
+       this.newItemEvent.emit(value);
+    }
 }
 
 
