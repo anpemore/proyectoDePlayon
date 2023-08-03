@@ -12,8 +12,8 @@ export class ContactoComponent {
     email:string="";
     
     VerificarCampos(){         
-      if(this.nombre=="")
-          alert(this.nombre);
+      if(this.nombre==""){
+         alert("No se puede guardar nada datos en blanco");
        /*  if(this.apellido=="")
             alert(this.apellido);
          if(this.telefono=="")
@@ -21,4 +21,15 @@ export class ContactoComponent {
          if(this.email=="")
             alert(this.email);*/
     }
+    else
+        alert("Se guardaran Datos todo esta bien");
+   }
+
+   LimpiarCampos(){
+      this.nombre="";
+      this.apellido="";
+      this.telefono="";
+      this.email="";
+   }
+    
 }

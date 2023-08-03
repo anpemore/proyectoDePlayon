@@ -11,8 +11,7 @@ export class FotoComponent {
     
     
     iniciarVariable(valor:string){
-      alert("componente de foto");
-          this.valor.emit(valor);
+        this.valor.emit(valor);
     }
 }
 

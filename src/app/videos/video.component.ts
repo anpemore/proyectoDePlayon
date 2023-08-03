@@ -10,8 +10,7 @@ export class VideoComponent {
   @Output() newItemEvent = new EventEmitter<string>();
     titulo="Videos En Mahate";    
     addNewItem(value: string) {
-       alert("componente video");
-       this.newItemEvent.emit(value);
+        this.newItemEvent.emit(value);
     }
 }
 
