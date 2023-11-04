@@ -7,7 +7,8 @@ import { ConexionesService } from '../conexiones.service';
   styleUrls: ['./inicio.component.css']
 })
 export class InicioComponent {
+      titulo="Bienvenidos a san jose de playon";
       constructor(conexionesService:ConexionesService){
-        /*alert("estamos en el constructor");*/
+       
       } 
 }
