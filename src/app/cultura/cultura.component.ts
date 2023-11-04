@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./cultura.component.css']
 })
 export class CulturaComponent {
-
+    titulo="Nuestra cultura"
 }
